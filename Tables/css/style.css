@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(39, 38, 38);
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+}
+nav a:hover {
+  background-color: white;
+  color: blueviolet;
+}
+header {
+  margin-bottom: 50px;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.container {
+  width: 80%;
+  border: 3px solid blueviolet;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+  color:white;
+}
+.tblSpan, .cal{
+    width: 90%;
+    margin: 10px auto;
+    height: 400px;
+    color: white;
+    
+}
+.tblSpan th, .tblSpan tr, .tblSpan td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+.tblStyles, .tblSpan{
+    width: 90%;
+    margin: 10px auto;
+    height: 400px;
+    
+}
+.tblStyles td, .tblStyles th, .tblSpan th, .tblSpan tr, .tblSpan td, .cal td, .cal th{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+.tblStyles{
+    border-collapse: collapse;
+}
+.tblSpan{
+    padding:5px;
+}
+.tblStyles th, .cal th{
+    background-color: rgb(26, 4, 91);
+}
+.tblStyles td, .cal th{
+    min-height: 25px;
+    min-width: 80px;
+}
+.tblStyles tr:hover, .cal tr:hover{
+    background-color: rgb(174, 206, 14);
+}
+.cal{
+    border-collapse: collapse;
+}
+.cal td{
+    height: 70px;
+    text-align: right;
+    border: 1px solid rgb(8, 83, 120);
+    vertical-align: top;
+    font-weight: bold;
+    width:14%;
+    padding-right: 2px;
+    padding-top: 2px;
+
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.weekend{
+    background-color: rgba(30, 10, 130,.8);
+}
