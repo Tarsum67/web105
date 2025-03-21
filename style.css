@@ -1,0 +1,101 @@
+/* Define theme variables */
+:root {
+  --bg-gradient: linear-gradient(to bottom, #040404, #2f7d91);
+  --main-bg: #ffffff;
+  --header-bg: #ffffff;
+  --section-bg: #ffffff;
+  --text-color: #333;
+  --link-color: #317fb6;
+  --link-hover: #0056a3;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 8px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --spacing: 1rem;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-gradient);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main wrapper - no box now */
+main {
+  background-color: var(--main-bg);
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; /* separates header and section */
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* Header with shadow and spacing */
+header {
+  background-color: var(--header-bg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; /* separates header and section */
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Section styled as a card */
+section {
+  background-color: var(--section-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Anchor/link styling */
+section a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  font-size: larger;
+}
+
+section a:hover {
+  background-color: var(--link-hover);
+  color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
