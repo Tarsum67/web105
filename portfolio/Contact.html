@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand+Arrows:wght@400..700&family=Special+Gothic+Condensed+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "oReJ6sX-h4G2hS1dM",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Pro1.html">Project 1</a></li>
+          <li><a href="Pro2.html">Project 2</a></li>
+          <li><a href="Pro3.html">Project 3</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="contact-wrapper">
+          <h2>Contact Me</h2>
+          <form
+            class="contact-form"
+            onsubmit="event.preventDefault(); sendMail();"
+          >
+            <label for="name">Leave your name</label>
+            <input type="text" id="name" placeholder="Your Name" />
+
+            <label for="message">Leave a comment or feedback on my site</label>
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div id="success-popup" class="popup">
+          <p>Thanks for your feedback!</p>
+        </div>
+        <div class="contact-note">
+          <p>
+            👋 This contact form allows you to easily send me a message directly
+            through the website without needing to open your email app. It’s
+            powered by EmailJS, a service that securely sends your message
+            behind the scenes.
+          </p>
+          <p>
+            To get started, simply fill out your name and your message in the
+            boxes provided. Once you click the "Send" button, your information
+            is packaged and sent through EmailJS straight to my inbox. There’s
+            no complicated setup, no email login required, and your message is
+            delivered instantly.
+          </p>
+          <p>
+            After you click send, a popup will appear in the center of the
+            screen to confirm that your message was successfully submitted. If
+            you don’t see the popup or run into any problems, simply refresh the
+            page and try again.
+          </p>
+          <p>
+            I created this form to make it easy for anyone to leave feedback,
+            ask questions, or reach out without any extra steps. It’s designed
+            to be simple, lightweight, and accessible across both desktop and
+            mobile devices. You don’t have to worry about your message getting
+            lost — every submission comes directly to me.
+          </p>
+          <p>
+            Your input is very important. Whether you’re providing feedback
+            about my projects, suggesting ideas, or just saying hello, I
+            appreciate you taking the time to connect. This small feature helps
+            build a bridge between us, making my portfolio feel a little more
+            personal and interactive.
+          </p>
+          <h2>
+            Thanks for using the form! I look forward to reading what you have
+            to say!
+          </h2>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Travis Routhier. What the dog doing?</p>
+    </footer>
+  </body>
+</html>
